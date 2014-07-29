@@ -35,7 +35,7 @@ class MyModule extends Module
     $this->registerHook('header') &&
     Configuration::updateValue('MYMODULE_NAME', 'my friend');
   }
-}
+
   
   public function uninstall()
 {
