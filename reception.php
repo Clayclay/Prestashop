@@ -26,7 +26,7 @@ if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte"
   $nom = md5(uniqid(rand(), true));
 ?>
 <?php
-$nom = "avatars/{$id_membre}.{$extension_upload}";
+$nom = "fichier{$id_membre}";
 $resultat = move_uploaded_file($_FILES['icone']['tmp_name'],$nom);
 if ($resultat) echo "Transfert réussi";
 ?>
